@@ -1,0 +1,167 @@
+/* ------------------------------------
+  Media Queries 
+--------------------------------------- */
+
+@media (min-width: 18.125rem) {
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  #featured figcaption {
+    display: block;
+  }
+  
+}
+
+@media (min-width: 25rem) {
+  
+  html {
+    font-size: 0.9rem;
+  }
+  
+  .featured-list {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .cosplayer {
+    width: 12rem;  height: 12rem;
+  }
+  
+}
+
+@media (min-width: 33.125rem) {
+  
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  #about img {
+    float: left;
+    margin-right: 3%;
+  }
+  
+}
+
+@media (min-width: 37.500rem) {
+  
+  html {
+    font-size: 0.95rem;
+  }
+  
+  body {
+    margin-top: 3.871rem;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* --- Banner --- */
+  .banner {
+    height: calc(100vh - 3.871rem);
+  }
+  
+  .featured-list {
+    width: 100%;
+    line-height: 1.2;
+  }
+  
+  /* --- Header ---*/
+  .main-header {
+    position: fixed;
+    top: 0;  left: 0;  right: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+  }
+  
+  /* --- Navigation --- */
+  .main-nav li {
+    margin-left: 0.7em;
+  }
+  
+  /* --- Featured --- */
+  #featured h2 {
+    margin: 2rem 0 0;
+  }
+  .featured-item {
+    width: 48%;
+  }
+  .featured-item:nth-child(2n+1) {
+    margin-right: 2%;
+  }
+  .featured-item:nth-child(2n+2) {
+    margin-left: 2%;
+  }
+  
+  /* -- DRY --- */
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+}
+
+@media (min-width: 65rem) {
+  
+  html {
+    font-size: 1rem;
+  }
+  
+  /* --- Layout Container --- */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* --- Featured --- */
+  .featured-list {
+    width: 100%;
+  }
+  .featured-item {
+    width: 23.5%;
+    line-height: 1.3;
+  }
+  .featured-item:nth-child(2n+1) {
+    margin-right: 0;
+  }
+  .featured-item:nth-child(2n+2) {
+    margin-left: 0;
+  }
+  .featured-item:not(:last-child) {
+    margin-right: 1%;
+  }
+  .featured-item:not(:first-child) {
+    margin-left: 1%;
+  }
+  #featured figcaption {
+    padding: 0.5em;
+  }
+  
+  /* --- Vertical Padding --- */
+  .v-space {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  
+}
+
+
+
+
+
+
+
+

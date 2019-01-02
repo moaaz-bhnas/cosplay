@@ -1,0 +1,204 @@
+/* ------------------------------------
+  Base Styles
+--------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.85rem;
+}
+
+body {
+  font: 1rem/1.6 'Varela Round', sans-serif;
+  background-color: #ececec;
+  color: #383838;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+/* ------------------------------------
+  Layout Styles
+--------------------------------------- */
+
+/* ---------------------------
+  Layout Containers
+------------------------------ */
+
+.container {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* ---------------------------
+  Header
+------------------------------ */
+
+/* --- Navigation --- */
+
+.main-header h1,
+.main-header ul {
+  margin: 0;
+}
+
+.main-nav {
+  padding: 0.9rem 0;
+}
+
+.main-nav a {
+  color: #615D57;
+  text-transform: uppercase;
+  padding: 0.2em 0.3em;
+}
+
+.main-nav a:hover {
+  background-color: #ececec;
+}
+
+/* ---------------------------
+  Banner
+------------------------------ */
+
+.banner {
+  height: calc(100vh - 10.154rem);
+  background: url(../img/killua-1.jpg) no-repeat 70% 20% / cover;
+/*  height: 32.9rem !important;*/
+}
+
+/* ---------------------------
+  Section : Featured
+------------------------------ */
+
+#featured h2 {
+  margin: 2.5em 0;
+}
+
+.featured-item {
+  margin: 2rem 0;
+}
+
+#featured figcaption {
+  background-color: rgba(56, 56, 56, 0.85);
+  color: #eee;
+  bottom: 0;  left: 0;  right: 0;
+  padding: 1em;
+  border-radius: 0 0 0.3rem 0.3rem;
+  display: none;
+}
+
+/*
+For absolutely positioned elements whose containing block is based on a block container element, the percentage is calculated with respect to the width of the padding box of that element.
+*/
+
+/* ---------------------------
+  Section : About
+------------------------------ */
+
+#about img {
+  width: 18rem;
+  padding: 10px;
+  border: 0.063rem solid #d9e4ea;
+}
+
+/* ---------------------------
+  Section : Cosplayers
+------------------------------ */
+
+.cosplayer {
+  display: inline-block;
+  width: 10rem;  height: 10rem;
+  max-width: 100%;
+  background-color: #fff;
+  margin: 0.2rem;
+  box-shadow: 0 1px 6px -1.5px rgba(0, 0, 0, .4)
+}
+
+.cosplayer img {
+  top: 0; bottom: 0; left: 0; right: 0; 
+  margin: auto;
+  max-height: 100%;
+  padding: 1rem;
+}
+
+/* ---------------------------
+  Footer
+------------------------------ */
+
+.main-footer {
+  padding: 1.5rem 0;
+}
+
+/* ------------------------------------
+  DRY
+--------------------------------------- */
+
+.text-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.absolute,
+.cosplayer img {
+  position: absolute;
+}
+.relative,
+.cosplayer{
+  position: relative;
+}
+
+.v-space {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.sm-v-space {
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.main-header,
+.main-footer,
+#about {
+  background-color: #fff;
+}
+
+.rounded,
+.cosplayer,
+#featured img {
+  border-radius: 0.4rem;
+}
+
+/* ------------------------------------
+  Media Queries 
+--------------------------------------- */
+
+
+
+  
+  
+  
+  
+  
+  
